@@ -29,28 +29,28 @@ int main()
     if(evenOne == oddOne)
     {
       cout << n << endl;
+      
       for(int i = 1; i <= n; i++)
         cout << inp[i] << ' ';
     }
 
     else if(freqZero >= n / 2)
     {
-      int temp = n - freqOne;
-      cout << temp << endl;
-      while(temp--)
+      cout << freqZero << endl;
+      
+      while(freqZero--)
         cout << "0 ";
     }
 
     else
     {
-      int temp;
-      freqOne % 2 ? temp = freqOne -1 : temp = freqOne;
-      cout << temp << endl;
-      while(temp--)
+      freqOne % 2 ? freqOne-- : freqOne;
+      cout << freqOne << endl;
+      
+      while(freqOne--)
         cout << "1 ";
     }
 
     cout << endl;
   }
 }
-
